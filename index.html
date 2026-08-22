@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelev - Application Mobile</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        .logo {
+            width: 120px; height: 120px;
+            background: #ff6f00;
+            border-radius: 30px;
+            margin: 0 auto 20px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 60px; font-weight: bold;
+        }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .subtitle { opacity: 0.9; margin-bottom: 30px; }
+        .download-btn {
+            display: inline-block;
+            background: #3ddc84;
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .info { margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 0.9em; opacity: 0.8; }
+        .steps { text-align: left; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 20px; border-radius: 10px; }
+        .steps ol { margin-left: 20px; }
+        .steps li { margin: 8px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">S</div>
+        <h1>Spelev</h1>
+        <p class="subtitle">Application de gestion de maintenance d'ascenseurs</p>
+        <a href="/apk/spelev.apk" class="download-btn" download>📱 Télécharger pour Android</a>
+        <div class="info">
+            <p><strong>Version :</strong> 1.0.0 | <strong>Taille :</strong> ~24 MB</p>
+            <p><strong>Compatible :</strong> Android 5.0+ (arm64-v8a)</p>
+        </div>
+        <div class="steps">
+            <h3 style="margin-bottom: 10px;">📲 Comment installer ?</h3>
+            <ol>
+                <li>Téléchargez le fichier APK</li>
+                <li>Autorisez "Sources inconnues" dans les paramètres</li>
+                <li>Ouvrez le fichier APK et appuyez sur Installer</li>
+                <li>Lancez Spelev !</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
