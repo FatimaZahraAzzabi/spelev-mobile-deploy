@@ -1,24 +1,18 @@
 name: spelev_app
 description: "A new Flutter project."
 
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none'
 
-# The following defines the version and build number for your application.
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.12.2
+  sdk: ^3.2.0
 
 dependencies:
   flutter:
     sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
   cupertino_icons: ^1.0.8
-
-  # Ajoutés pour l'appel au backend et le stockage sécurisé du token JWT
   http: ^1.6.0
   flutter_secure_storage: ^8.1.0
   intl: ^0.20.3
@@ -27,39 +21,24 @@ dependencies:
   path_provider: ^2.1.6
   audioplayers: ^6.8.1
   file_picker: ^12.0.0
-  http_parser: ^4.1.2
   flutter_markdown: ^0.7.3
-
   table_calendar: ^3.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^6.0.0
+  flutter_lints: ^3.0.0
 
-  # Package pour générer l'icône de l'application
   flutter_launcher_icons: ^0.13.1
-
-
-# ==========================================
-# CONFIGURATION DE L'ICÔNE DE L'APPLICATION
-# ==========================================
 
 flutter_launcher_icons:
   android: true
   ios: true
   image_path: "assets/icon/icon.png"
-
   adaptive_icon_background: "#FFFFFF"
   adaptive_icon_foreground: "assets/icon/icon.png"
-
   min_sdk_android: 21
-
-
-# ==========================================
-# CONFIGURATION FLUTTER
-# ==========================================
 
 flutter:
   uses-material-design: true
