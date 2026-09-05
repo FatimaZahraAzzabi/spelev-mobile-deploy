@@ -1,0 +1,27 @@
+flutter/ephemeral
+.gradle/
+.gradle_temp/
+android/.gradle/
+android/local.properties
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+
+# ─── IDE ───
+.idea/
+*.iml
+.vscode/
+
+# ─── Divers ───
+*.log
+*.class
+.DS_Store
+Thumbs.db
+
+# ─── Build outputs ───
+/android/app/debug
+/android/app/profile
+/android/app/release
