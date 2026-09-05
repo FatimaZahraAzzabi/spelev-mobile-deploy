@@ -1,11 +1,11 @@
-﻿FROM ghcr.io/cirruslabs/flutter:3.24.0 AS build
+﻿FROM ghcr.io/cirruslabs/flutter:3.27.4 AS build
 
 WORKDIR /app
 COPY . .
 
 RUN flutter pub get
 
-RUN flutter build web --release --web-renderer canvaskit --no-tree-shake-icons
+RUN flutter build web --release --web-renderer canvaskit
 
 FROM nginx:alpine
 COPY --from=build /app/build/web /usr/share/nginx/html
